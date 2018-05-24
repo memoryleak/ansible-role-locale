@@ -1,0 +1,7 @@
+---
+# tasks file for memoryleak.locale
+- name: Copy locale.conf
+  template:
+    dest: /etc/locale.conf
+    src: locale.j2
+  tags: ['template']
